@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Load quotes
 def load_quotes():
-    file_path = Path(r"D:\OneDrive - Lowcode Minds Technology Pvt Ltd\Desktop\motivation_app\quotes.txt")
+    file_path = Path("quotes.txt")
     if file_path.exists():
         with open(file_path, "r", encoding="utf-8") as f:
             return [line.strip() for line in f if line.strip()]
